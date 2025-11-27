@@ -18,7 +18,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Auteur:
   Renske Bingen
   #### Je startniveau:
-  Rode of zwarte piste
+  Rode piste
   #### Je focus:
   Responsive
  
