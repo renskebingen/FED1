@@ -1,0 +1,214 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: local("Poppins Regular"),
+	url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins SemiBold";
+	src: local("Poppins SemiBold"),
+	url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Walibi";
+	src: local("walibi holland"),
+	url("../fonts/walibi0615/walibi-holland.ttf") format("truetype");
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--textcolor:white;
+	--backgroundcolor:#17181a;
+	--headerbackgroundcolor:#1B2434;
+	--buttoncolor: #cda720;
+	--buttontextcolor: white;
+	--textfont: "Poppins";
+	--textfontsemibold: "Poppins SemiBold";
+	--hfont: "Walibi";
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	background-color: var(--backgroundcolor);
+	color: var(--textcolor);
+	margin: 0em;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	background-color: var(--headerbackgroundcolor);
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	
+	padding-left: 1em;
+}
+
+header img:first-of-type {
+	width: 8em;
+}
+
+header img:nth-of-type(2) {
+	width: 3em;
+}
+
+button {
+	color: var(--buttontextcolor);
+	background-color: var(--buttoncolor);
+	border: 0.2em solid var(--buttoncolor);
+	border-radius: 3em;
+	font-family: var(--textfont);
+	padding: 0.4em 1.3em;
+}
+
+.h1hidden {
+  	clip: rect(0 0 0 0);
+  	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.titel {
+    position: relative;
+    display: inline-block;
+}
+
+.titel video {
+    width: 100%;
+    height: auto;
+}
+
+.titel h2 {
+	font-family: var(--hfont);
+    position: absolute;
+    padding-left: 0.5em;
+    color: white;
+    text-align: start;
+	line-height: 1em;
+    padding-top: 0.7em;
+    font-size: 1.8em;
+
+}
+
+h3 {
+	font-family: var(--hfont);
+	font-size: 1.3em;
+	padding-left: 0.6em;
+}
+
+h4 {
+	font-family: var(--textfontsemibold);
+	font-size: 1.12em;
+	padding-left: 0.9em;
+	margin-top: 1.4em;
+	margin-bottom: 0em;
+}
+
+p {
+ font-family: var(--textfont);
+ padding-left: 1em;
+ padding-right: 1em;
+ margin-top: 0.5em;
+}
+
+.data {
+	font-family: var(--textfont);
+	padding-left: 1.5em;
+	line-height: 2em;
+}
+
+/* https://www.w3schools.com/howto/howto_css_bullet_color.asp */
+.data li::marker {
+	color: hsl(0, 0%, 39%, .5);
+	font-size: 1.1em;
+}
+
+.carousel1 li {
+	padding-top: 2em;
+	height: 32em;
+}
+
+.carousel1 ul {
+	list-style-type: none;
+	padding-left: 0.9em;
+	display: flex;
+	gap: 0.8em;
+}
+
+.kaart {
+	width: 18em;
+    background: #182237;
+    border-radius: 1em;
+    overflow: hidden; 
+    flex-shrink: 0;
+
+	display: flex;
+    flex-direction: column;
+}
+
+.kaartimg {
+	overflow: hidden;
+	max-height: 15em;
+}
+
+.kaart img {
+	height: 18em;
+    overflow: hidden;
+
+	width: 300%;
+    height: 300%;
+    object-fit: cover;
+}
+
+.carousel1img1 {
+ object-position: -20em -2em;
+}
+
+.carousel1img2 {
+ object-position: -20em -2em;
+}
+
+.carousel1img3 {
+ object-position: -20em -4em;
+}
+
+.carousel1img4 {
+ object-position: -20em -5em;
+}
+
+.kaarttekst {
+	height: 13em;
+}
+
+.carousel2 {
+	list-style-type: none;
+	padding-left: 1em;
+
+	display: flex;
+    flex-direction: column;
+}
+
+.carousel2 img {
+	border-radius: 2em;
+}

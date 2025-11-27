@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Renske">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Walibi Holland</title>
+
+	<link href="styles/style.css" rel="stylesheet">
+
+	<link rel="icon" type="image/svg+xml" href="images/walibiletterlogo.png">
+</head>
+
+<!--Alle foto's worden nog gecomprimeerd in Photoshop-->
+<!--h2 bij elke section en dan hidden-->
+
+<body>
+	<header> 
+		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo" width="120em" height="70em">
+		<button>Koop je tickets</button>
+		<img src="images/menu.png" alt="Menu knop" width="50em" height="40em">
+		<nav></nav>
+	</header>
+
+		<!-- Bij alle img tags gaat de width en de height uiteindelijk weg, maar voor nu even via HTML --> 
+	<main> 
+		<section class="titel">
+			<!-- H1 moet waarschijnlijk anders door screenreader: <h1> Walibi Holland </h1> --> 
+			<h1 class="h1hidden">Walibi Holland</h1>
+			<h2>BRIGHT NIGHTS: TIJDENS DE KERSTVAKANTIE</h2>
+			<video controls autoplay src="videos/video-mobile.mp4" alt="Video Walibi Brightnights"></video> <!--https://www.w3schools.com/tags/att_video_autoplay.asp-->
+		</section>
+
+		<section>	
+			<h3>WAT IS BRIGHT NIGHTS?</h3>
+			<h4>Een stralende winter in Walibi!</h4>
+			<p>Beleef Bright Nights tijdens de kerstvakantie! De spectaculairste rides in fonkelende lights. Maak samen onvergetelijke herinneringen in de gezellige kerstsfeer van Walibi, waar attracties shinen als nooit tevoren, lichtshows je verbazen, winters entertainment je betovert en smakelijke lekkernijen je verleiden. Zodra het gaat schemeren begint het park te stralen met duizenden lichtjes en staan de attracties letterlijk in de spotlights.</p>
+			<p>Bright Nights vindt plaats op:</p>
+			<ul class="data">
+				<li>20 t/m 23 december 2025</li>
+				<li>26 t/m 30 december 2025</li>
+				<li>2 t/m 4 januari 2026</li>
+			</ul>
+		</section>
+
+	<!-- voor het maken van deze carousel heb ik de opzet gedaan met behulp van ChatGPT  -->
+		<section class="carousel1">
+			<ul>
+				<li>
+					<article class="kaart">
+						<div class="kaartimg">
+							<img class="carousel1img1" src="images/walibicarousel1foto1.webp" alt="Lost Gravity achtbaan verlicht" >
+						</div>	
+						<div class="kaarttekst">
+								<h4>Rides with Lights</h4>
+								<p>Tijdens Bright Nights staan een aantal van onze attracties letterlijk in de spotlights.</p>
+							</div>
+					</article>
+				</li>
+
+				<li>
+					<article class="kaart">
+						<div class="kaartimg">
+							<img class="carousel1img2" src="images/walibicarousel1foto2.webp" alt="Blij gezin met twee kinderen in Walibi" >
+						</div>
+						<div class="kaarttekst">
+								<h4>Winterse activiteiten & Verassend Entertainment</h4>
+								<p>Verspreid over het park vind je verschillende winterse activiteiten en sta je oog in oog met verassend entertainment.</p>
+							</div>
+					</article>
+				</li>
+
+				<li>
+					<article class="kaart">
+						<div class="kaartimg">
+							<img class="carousel1img3" src="images/walibicarousel1foto3.webp" alt="Verwonderd meisje drukt op een rode knop" >
+						</div>
+							<div class="kaarttekst">
+								<h4>Interactieve lichteffecten</h4>
+								<p>Druk op de knop en activeer lichteffecten</p>
+							</div>
+					</article>
+				</li>
+
+				<li>
+					<article class="kaart">
+						<div class="kaartimg">
+							<img class="carousel1img4" src="images/walibicarousel1foto4.webp" alt="Vrouwelijke dansers op podium in ijs thema" >
+						</div>	
+						<div class="kaarttekst">
+								<h4>Shows</h4>
+								<p>Kijk deze winter je ogen uit tijdens de speciale shows tijdens Bright Nights!</p>
+							</div>
+					</article>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Overnachten in de kerstvakantie vanaf € 65,- P.P.</h3>
+			<p>Inclusief een bezoek aan Bright Nights!</p>
+			<p>Maak er een compleet winteravontuur van en blijf slapen in ons vakantiepark Walibi Village! Na een dag vol rides & lights tijdens Bright Nights hoef je niet naar huis. Warm op in je eigen huisje en geniet nog even na van alle winterse gezelligheid.</p>
+			
+			
+			<ul class="carousel2">
+				<li><img src="images/walibicarousel2foto1.webp" alt="Twee blije meisjes op een slee in de sneeuw" ></li>
+				<li><img src="images/walibicarousel2foto2.webp" alt="Vrolijk gezin van drie aan het ontbijt met kado's" ></li>
+				<li><img src="images/walibicarousel2foto3.webp" alt="Blij gezin van vier speelt rummikub bij de kerstboom" ></li>
+			</ul>
+
+			<button>Boek je huisje</button>
+			<button>Meer informatie</button>
+		</section>
+
+		<section>
+			<img src="images/walibiachtergrondsterren.jpg" alt="">
+			<img src="images/walibiachtergrondbrightnights.webp" alt="">
+		</section>
+
+	<!--Met CSS order met Flexbox -> Flex direction column IMG op -1 zetten zodat IMG naar boven gaat-->
+		<section>
+			<h3>Attracties in de winter</h3>
+			<img src="images/walibifotomeisjedraaimolen.webp" alt="Blij jong meisje op een paard van eeen draaimolen" >		
+			<p>Tijdens Bright Nights in Walibi kun je niet alleen genieten van onze spectaculaire Rides with Lights, maar ook van bijna alle* andere attracties (m.u.v. Splash Battle en El Rio Grande). Met wie kom jij in deze winter genieten? Dompel je onder in de magische Walibi wintersfeer en beleef een dag vol avontuur, gezelligheid en shinende momenten.</p>
+			<p>*In verband met de weersomstandigheden kan het zijn dat op de dag zelf besloten wordt dat bepaalde attracties later opengaan, eerder sluiten of gesloten blijven.</p>
+
+			<button>Koop je tickets</button>
+			<button>Bekijk alle attracties</button>
+		</section>
+	</main>
+
+	<!--Met CSS order met Flexbox -> Flex direction column IMG op -1 zetten zodat IMG naar boven gaat-->
+	<footer>
+		<h3>Het park in je broekzak</h3>
+		<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland" width="100em" height="100em">		
+		<p>... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
+		<img src="images/google-playstore.png" alt="Google playstore download knop">
+		<img src="images/ios-appstore.png" alt="Ios appstore download knop">
+
+		<h4>Contact</h4>
+		<p>Spijkweg 30 8256 RJ Biddinghuizen Nederland</p>
+		<a href="tel://31321329999">+31 321 32 99 99</a>
+		<a href="info@walibiholland.nl">info@walibiholland.nl</a>
+		<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
+		<button>Contact</button>
+
+		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
+		<button>Walibi zakelijk</button>
+
+		
+
+	</footer>
+
+
+
+
+
+	<script defer src="scripts/script.js"></script>
+</body>
+	
+</html>
