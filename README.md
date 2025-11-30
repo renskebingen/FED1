@@ -35,6 +35,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   https://www.walibi.nl/brightnights/nl
+  https://www.walibi.nl/brightnights/nl/rides-lights
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina  
@@ -42,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepagina.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Koop je tickets 
+  Rides with lights
   
   <img src="readme-images/koopjetickets.png" width="375px" alt="omschrijving van de pagina">
  
