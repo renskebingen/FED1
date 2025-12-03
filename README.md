@@ -59,6 +59,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  1. er wordt heel veel gebruik gemaakt van divs en spans. terwijl heel veel ook semantisch kan. zo zie ik geen sections of andere semantische tags.
+  2. er worden geen alt teksten gebruikt bij img's.
+  3. de website beschikt vanwege de browser focus states, maar er is in het bijzonder geen extra aandacht aan besteed zoals apparte vormgeving hiervoor.
+  4. de website is goed responsive. als je de website verbreed en smaller maakt, blijft het goed staan.
+  5. de buttons zijn groot genoeg en goed zichtbaar door het contrast.
+  6. de headings zijn niet in een logische volgorde. zo staan ze door elkaar heen en gaat het soms van h3 naar h2 naar h4.
+  7. wel maken ze gebruik van maar 1 h1 per pagina
+  8. voor componenten waar ul's gebruikt voor kunnen worden, worden alleen maar divs en spans gebruikt
+  9. de video op de pagina doet aan autoplay, maar deze kan je wel op pauze zetten
+  10. de video bevat ook ondertiteling. ik kan geen transcript vinden
+  11. voor links worden a tags gebruikt, maar je kan verder niet zien waar het je naartoe brengt etc.
+  12. dark en lightmode zijn wel supported. je moet helemaal onderaan in de website naar toegankelijkheid en dan de dropdown aanklikken om vervolgens met schuifjes dit aan te passen. het is goed dat ze het toevoegen, maar de manier waarop is onhandig en ook niet makkelijk vindbaar (kwam er zelf ook pas later achter na het invullen van het WCAG document).
+  13. de animaties die in de website zitten zijn met een goede flow erin gezet.
+  14. het kleurencontrast wordt goed rekening mee gehouden.
+     
+
 </details>
 
 
