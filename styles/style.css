@@ -52,6 +52,10 @@
 /* JOUW STYLING */
 /****************/
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
 	background-color: var(--backgroundcolor);
 	color: var(--textcolor);
