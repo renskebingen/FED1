@@ -18,19 +18,35 @@
 
 <body>
 	<header> 
-		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo" width="120em" height="70em">
+		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
 		<button>Koop je tickets</button>
-		<img src="images/menu.png" alt="Menu knop" width="50em" height="40em">
-		<nav></nav>
+
+		<img id="menuKnop" src="images/menu.png" alt="Menu knop">
+		<nav id="mainNav">
+			<p id="menuSluiten">Sluiten X</p>
+            <ul>
+				<li><a href="#">TICKETS > </a></li>
+				<li><a href="rideswithlights.html">RIDES WITH LIGHTS > </a></li>
+				<li><a href="#">ACTIVITEITEN > </a></li>
+				<li><a href="#">OPENINGSTIJDEN > </a></li>
+				<li><a href="#">VEELGESTELDE VRAGEN > </a></li>
+				<li><a href="#">GROEPEN > </a></li>
+				<li><a href="#">OVERNACHTEN IN WALIBI VILLAGE > </a></li>
+				<li><a href="#">OVERZICHT > </a></li>
+				<li><a href="#">Early Bird tickets op datum zetten > </a></li>
+            </ul>
+        </nav>
+
+		<div class="menu-overlay"></div>
+		
 	</header>
 
-		<!-- Bij alle img tags gaat de width en de height uiteindelijk weg, maar voor nu even via HTML --> 
+		 
 	<main> 
-		<section class="titel">
-			<!-- H1 moet waarschijnlijk anders door screenreader: <h1> Walibi Holland </h1> --> 
+		<section class="titel"> 
 			<h1 class="h1hidden">Walibi Holland</h1>
 			<h2>BRIGHT NIGHTS: TIJDENS DE KERSTVAKANTIE</h2>
-			<video controls autoplay src="videos/video-mobile.mp4" alt="Video Walibi Brightnights"></video> <!--https://www.w3schools.com/tags/att_video_autoplay.asp-->
+			<video controls autoplay src="videos/video-mobile.mp4" aria-label="Walibi pormotie video Bright Nights"></video> <!--https://www.w3schools.com/tags/att_video_autoplay.asp-->
 		</section>
 
 		<section>	
@@ -45,7 +61,7 @@
 			</ul>
 		</section>
 
-	<!-- voor het maken van deze carousel heb ik de opzet gedaan met behulp van ChatGPT  -->
+	<!-- voor het maken van de carousellen heb ik de opzet gedaan met behulp van ChatGPT  -->
 		<section class="carousel1">
 			<ul>
 				<li>
@@ -96,68 +112,109 @@
 					</article>
 				</li>
 			</ul>
+
+			<nav class="carousel1-bullets" aria-label="carousel paginatie"></nav>
+
 		</section>
 
-		<section>
+		<section class="boekjehuisje">
 			<h3>Overnachten in de kerstvakantie vanaf € 65,- P.P.</h3>
 			<p>Inclusief een bezoek aan Bright Nights!</p>
 			<p>Maak er een compleet winteravontuur van en blijf slapen in ons vakantiepark Walibi Village! Na een dag vol rides & lights tijdens Bright Nights hoef je niet naar huis. Warm op in je eigen huisje en geniet nog even na van alle winterse gezelligheid.</p>
 			
-			
-			<ul class="carousel2">
-				<li><img src="images/walibicarousel2foto1.webp" alt="Twee blije meisjes op een slee in de sneeuw" ></li>
-				<li><img src="images/walibicarousel2foto2.webp" alt="Vrolijk gezin van drie aan het ontbijt met kado's" ></li>
-				<li><img src="images/walibicarousel2foto3.webp" alt="Blij gezin van vier speelt rummikub bij de kerstboom" ></li>
-			</ul>
+			<div class="carousel2slider">
+				<ul class="carousel2">
+					<li><img src="images/walibicarousel2foto1.webp" alt="Twee blije meisjes op een slee in de sneeuw" ></li>
+					<li><img src="images/walibicarousel2foto2.webp" alt="Vrolijk gezin van drie aan het ontbijt met kado's" ></li>
+					<li><img src="images/walibicarousel2foto3.webp" alt="Blij gezin van vier speelt rummikub bij de kerstboom" ></li>
+				</ul>
 
-			<button>Boek je huisje</button>
-			<button>Meer informatie</button>
+				<nav class="carousel2slider-bullets" aria-label="carousel paginatie"></nav>
+			</div>
+			
+			<div class="BJHbuttons">
+				<button>Boek je huisje</button>
+				<button class="buttonomlijning">Meer informatie</button>
+			</div>
 		</section>
 
-		<section>
-			<img src="images/walibiachtergrondsterren.jpg" alt="">
-			<img src="images/walibiachtergrondbrightnights.webp" alt="">
+		<section class="brightnightsfoto">
+			<img src="images/walibiachtergrondbrightnights.webp" alt="Bright Nights Walibi Rides & Lights">
 		</section>
 
 	<!--Met CSS order met Flexbox -> Flex direction column IMG op -1 zetten zodat IMG naar boven gaat-->
-		<section>
-			<h3>Attracties in de winter</h3>
+		<section class="attractiesinwinter">
+			<h3>ATTRACTIES IN DE WINTER</h3>
 			<img src="images/walibifotomeisjedraaimolen.webp" alt="Blij jong meisje op een paard van eeen draaimolen" >		
 			<p>Tijdens Bright Nights in Walibi kun je niet alleen genieten van onze spectaculaire Rides with Lights, maar ook van bijna alle* andere attracties (m.u.v. Splash Battle en El Rio Grande). Met wie kom jij in deze winter genieten? Dompel je onder in de magische Walibi wintersfeer en beleef een dag vol avontuur, gezelligheid en shinende momenten.</p>
 			<p>*In verband met de weersomstandigheden kan het zijn dat op de dag zelf besloten wordt dat bepaalde attracties later opengaan, eerder sluiten of gesloten blijven.</p>
-
-			<button>Koop je tickets</button>
-			<button>Bekijk alle attracties</button>
+			
+			<div class="AIWbuttons">
+				<button>Koop je tickets</button>
+				<button class="buttonomlijning">Bekijk alle attracties</button>
+			</div>
 		</section>
 	</main>
 
-	<!--Met CSS order met Flexbox -> Flex direction column IMG op -1 zetten zodat IMG naar boven gaat-->
+	
 	<footer>
-		<h3>Het park in je broekzak</h3>
-		<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland" width="100em" height="100em">		
-		<p>... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
-		<img src="images/google-playstore.png" alt="Google playstore download knop">
-		<img src="images/ios-appstore.png" alt="Ios appstore download knop">
+		<section class="parkinbroekzak">
+			
+			<div class="PIBtekstblok">
+				<h3 class="PIBh3">HET PARK IN JE BROEKZAK!</h3>
+				<p class="PIBp">... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
 
-		<h4>Contact</h4>
-		<p>Spijkweg 30 8256 RJ Biddinghuizen Nederland</p>
-		<a href="tel://31321329999">+31 321 32 99 99</a>
-		<a href="info@walibiholland.nl">info@walibiholland.nl</a>
-		<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
-		<button>Contact</button>
+				<div class="appstoresbuttons">
+					<img src="images/google-playstore.png" alt="Google Play download knop">
+					<img src="images/ios-appstore.png" alt="iOS App Store download knop">
+				</div>
+			</div>
 
-		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
-		<button>Walibi zakelijk</button>
+			<figure>
+				<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland">
+			</figure>
 
+		</section>
+
+		<section class="contact">
+			<h3>CONTACT</h3>
+			<p>Spijkweg 30 <br> 8256 RJ Biddinghuizen <br> <strong>Nederland</strong></p>
+			<a href="tel://31321329999">+31 321 32 99 99</a>
+			<a href="info@walibiholland.nl">info@walibiholland.nl</a>
+			<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
+			<button>Contact</button>
+		</section>
+
+		<section class="footerbanner1">
+			<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
+			<button>Walibi zakelijk</button>
+		</section>
+
+		<section class="footerbanner2">
+			<ul>
+				<li><a href="">Algemene voorwaarden</a></li>
+				<li><a href="">Disclaimer</a></li>
+				<li><a href="">Privacyverklaring</a></li>
+				<li><a href="">Park-reglement</a></li>
+				<li><a href="">Cookiebeleid</a></li>
+				<li><a href="">Cookievoorkeuren</a></li>
+				<li><a href="">Vulnerability Disclosure Policy</a></li>
+				<li><a href="">Gedragscode & Integriteit</a></li>
+				<li><a href="">Toegankelijkheidsverklaring</a></li>
+				<li><a href="">Toegankelijkheid</a></li>
+			</ul>
+
+			<p>© Walibi Holland. All rights reserved.</p>
+		</section>
 		
-
+		
 	</footer>
 
 
 
 
 
-	<script defer src="scripts/script.js"></script>
+	<script src="scripts/script.js"></script>
 </body>
 	
 </html>
