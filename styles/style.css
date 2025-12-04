@@ -30,13 +30,22 @@
 /*********************/
 :root {
 	--textcolor:white;
+	--textcolorPIB: #344054;
 	--backgroundcolor:#17181a;
-	--headerbackgroundcolor:#1B2434;
+	--fb1backgroundcolor: #252f41;
+	--fb2backgroundcolor: #37445c;
+	--backgroundcolorPIB: #cda720;
+	--hfbackgroundcolor:#1B2434;
 	--buttoncolor: #cda720;
 	--buttontextcolor: white;
 	--textfont: "Poppins";
 	--textfontsemibold: "Poppins SemiBold";
 	--hfont: "Walibi";
+	--borderbottomcolor: rgb(100, 100, 100);
+	--kaartenkleur: #1B2434;
+	--kaartendetailskleur: #cda720;
+	--h1colorRWL: #cda720;
+	--fadedbuttoncolor: #80795f;
 }
 
 /****************/
@@ -53,23 +62,6 @@ img {
 	width: 100%;
 }
 
-header {
-	background-color: var(--headerbackgroundcolor);
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-	
-	padding-left: 1em;
-}
-
-header img:first-of-type {
-	width: 8em;
-}
-
-header img:nth-of-type(2) {
-	width: 3em;
-}
-
 button {
 	color: var(--buttontextcolor);
 	background-color: var(--buttoncolor);
@@ -79,8 +71,105 @@ button {
 	padding: 0.4em 1.3em;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: var(--hfbackgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    transition: transform 0.3s ease; 
+}
+
+/* hulp van ChatGPT */
+header.hide {
+    transform: translateY(-100%); 
+}
+
+header img:first-of-type {
+	width: 8em;
+	height: auto;
+	padding-bottom: 0.8em;
+	padding-top: 0.8em;
+}
+
+header img:nth-of-type(2) {
+	width: 3em;
+}
+
+header nav {
+	height: 100vh;
+    display: none;          
+    position: fixed;
+	top: 0;
+    right: 0;
+    background: var(--hfbackgroundcolor);
+    width: 100%;
+	z-index: 9999;
+	overflow-y: scroll;
+}
+
+header nav.open {
+    display: block;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    padding: 0.8em 4em 0.8em 2em;
+}
+
+header a {
+	text-decoration: none;
+	color: var(--backgroundcolorPIB);
+	font-size: 1.5em;
+	font-family: var(--hfont);
+}
+
+header li:last-of-type a {
+	font-family: var(--textfontsemibold);
+	font-size: 1.2em;
+}
+
+header nav p {
+	text-align: right;
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	border-bottom: 0.01em solid;
+	border-color: var(--borderbottomcolor);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: var(--hfbackgroundcolor); 
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9998; 
+    pointer-events: none;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+/* hulp van ChatGPT */
+.menu-overlay.active {
+    width: 300vw; 
+    height: 300vw;
+}
+
 .h1hidden {
-  	clip: rect(0 0 0 0);
+  	clip: rect(0, 0, 0, 0);
   	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
@@ -97,9 +186,11 @@ button {
 .titel video {
     width: 100%;
     height: auto;
+	margin-top: 4em;
 }
 
 .titel h2 {
+	margin-top: 3em;
 	font-family: var(--hfont);
     position: absolute;
     padding-left: 0.5em;
@@ -108,7 +199,6 @@ button {
 	line-height: 1em;
     padding-top: 0.7em;
     font-size: 1.8em;
-
 }
 
 h3 {
@@ -153,12 +243,18 @@ p {
 	list-style-type: none;
 	padding-left: 0.9em;
 	display: flex;
-	gap: 0.8em;
+	overflow-x: auto;
+	margin-bottom: 0;
+
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 }
 
 .kaart {
+	margin-left: 0.8em;
+	margin-right: 0.8em;
 	width: 18em;
-    background: #182237;
+    background: var(--kaartenkleur);
     border-radius: 1em;
     overflow: hidden; 
     flex-shrink: 0;
@@ -182,33 +278,475 @@ p {
 }
 
 .carousel1img1 {
- object-position: -20em -2em;
+ 	object-position: -20em -2em;
 }
 
 .carousel1img2 {
- object-position: -20em -2em;
+ 	object-position: -20em -2em;
 }
 
 .carousel1img3 {
- object-position: -20em -4em;
+ 	object-position: -20em -4em;
 }
 
 .carousel1img4 {
- object-position: -20em -5em;
+ 	object-position: -20em -5em;
 }
 
 .kaarttekst {
 	height: 13em;
 }
 
+.carousel1 ul > li {
+	scroll-snap-align: start;
+}
+
+/* hulp van ChatGPT */
+.carousel1-bullets {
+	display: flex;
+	justify-content: center;
+	gap: 0.5em;
+	padding-bottom: 1em;
+}
+
+.carousel1-bullets button {
+	border-radius: 10em;
+	border: none;
+	background: var(--fadedbuttoncolor);
+	cursor: pointer;
+	transition: background .2s, transform .2s;
+}
+
+.carousel1-bullets button[aria-current="true"] {
+	background: var(--buttoncolor);
+}
+
 .carousel2 {
 	list-style-type: none;
-	padding-left: 1em;
-
+	padding-left: 2em;
 	display: flex;
-    flex-direction: column;
+    flex-direction: row;
+	overflow-x: auto;
+	gap: 2.5em;
+	scroll-snap-type: x mandatory;
+
+	padding-right: 2em;
+}
+
+.carousel2 li {
+    flex: 0 0 20em;
+    scroll-snap-align: center;
 }
 
 .carousel2 img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;   
+    border-radius: 2em;
+}
+
+.carousel2slider-bullets {
+	display: flex;
+	justify-content: center;
+	gap: 0.5em;
+	padding-bottom: 1em;
+}
+
+.carousel2slider-bullets button {
+	border-radius: 10em;
+	border: none;
+	background: var(--fadedbuttoncolor);
+	cursor: pointer;
+	transition: background .2s, transform .2s;
+}
+
+.carousel2slider-bullets button[aria-current="true"] {
+	background: var(--buttoncolor);
+}
+
+.BJHbuttons {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+}
+
+.buttonomlijning {
+	border: 0.2em solid var(--buttoncolor);
+	background-color: var(--backgroundcolor);
+}
+
+/* https://www.w3schools.com/cssref/pr_background-image.php */
+.brightnightsfoto {
+	background-image: url("../images/walibiachtergrondsterren.jpg");
+	height: 150%;
+}
+
+.attractiesinwinter {
+	display: flex;
+	flex-direction: column;
+}
+
+.attractiesinwinter img {
+	order: -1;
+	width: 90%;
+	margin-left: 1em;
+	border-radius: 1em;
+	margin-top: 2em;
+}
+
+.AIWbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.AIWbuttons button {
+    width: auto;
+}
+
+footer {
+	background-color: var(--hfbackgroundcolor);
+	padding-top: 1em;
+}
+
+.parkinbroekzak {
+    background: var(--backgroundcolorPIB);
+    margin: 1.5em;
+    padding: 1em 0em 1em 1em;
+    border-radius: 1.2em;
+
+    display: flex;
+	gap: 1em;
+    align-items: flex-start;
+
+}
+
+.parkinbroekzak h3 {
+    margin-top: 0;
+}
+
+.PIBtekstblok {
+    width: 10em;
+    max-width: 100%;
+}
+
+.parkinbroekzak .appstoresbuttons {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.parkinbroekzak .appstoresbuttons img {
+    width: 8em;
+}
+
+.parkinbroekzak figure {
+    margin: 0;
+}
+
+.parkinbroekzak figure img {
+    width: 8em;
+    height: auto;
+	margin-top: -3em;  
+}
+
+.PIBh3 {
+	color: var(--textcolorPIB);
+	font-size: 1.1em;
+	padding: 0;
+
+}
+
+.PIBp {
+	color: var(--textcolorPIB);
+	font-size: 0.8em;
+	padding: 0;
+	margin: 0;
+}
+
+.contact {
+	background-color: var(--backgroundcolor);
+	margin: 1.5em;
+    padding: 1em 0em 1em 0em;
+    border-radius: 1.2em;
+}
+
+.contact h3 {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.contact p {
+	font-size: 0.9em;
+	padding-right: 0;
+}
+
+.contact a {
+	padding-left: 1em;
+	display: block;
+}
+
+.contact a:first-of-type {
+	padding-bottom: 0.4em;
+}
+
+.contact p:last-of-type {
+	font-size: 0.8em;
+	padding-right: 0;
+}
+
+.contact button {
+	margin-left: 1em;
+}
+
+.footerbanner1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--fb1backgroundcolor);
+}
+
+.footerbanner1 img {
+	width: 8em ;
+	height: auto;
+	padding-bottom: 1em;
+}
+
+.footerbanner1 button {
+	border: 0.1em solid var(--hfbackgroundcolor);
+	background-color: var(--hfbackgroundcolor);
+}
+
+.footerbanner2 {
+	background-color: var(--fb2backgroundcolor);
+}
+
+.footerbanner2 ul {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-left: 0em;
+	padding-bottom: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: 0.01em solid;
+	border-color: var(--borderbottomcolor);
+}
+
+.footerbanner2 li {
+	list-style-type: none;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+.footerbanner2 a {
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: var(--textfontsemibold);
+	color: var(--textcolor);
+	padding-right: 1em;
+}
+
+.footerbanner2 p {
+	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+/* rideswithlightspagina */
+
+.RWLhead {
+    background-image: url("../images/speedofsound.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 4em 1em 2em 1em;
+    color: white;
+}
+
+.RWLhead h1 {
+	margin-top: 5em;
+	font-family: var(--hfont);
+	font-size: 2em;
+	max-width: 75%;
+	color: var(--h1colorRWL);
+}
+
+.RWLhead p {
+	font-family: var(--textfont);
+	padding-left: 0;
+	padding-right: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 3em;
+}
+
+.dropdownmenu {
+    width: 20em;
+	background-color: var(--hfbackgroundcolor);
 	border-radius: 2em;
+	border: solid 1px var(--borderbottomcolor);
+	box-shadow: 0 0 0 0.8em var(--backgroundcolor); /* https://www.w3schools.com/css/css3_shadows_box.asp */
+}
+
+.dropdownmenu-toggle {
+    width: 100%;
+    background: none;
+    color: #e5b93c;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+	gap: 1em;
+}
+
+.dropdownmenu-list {
+    margin-top: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: opacity .3s ease;
+}
+
+.dropdownmenu-list.show {
+    opacity: 1;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.dropdownmenu-list li {
+	list-style-type: none;    
+	border-top: 1px solid var(--borderbottomcolor);
+}
+
+.dropdownmenu-list li a {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 1em;
+    color: #e5b93c;
+    text-decoration: none;
+    border-bottom: 0.1em solid rgba(255,255,255,0.1);
+	justify-content: flex-start;
+	gap: 1em;
+	font-family: var(--textfont);
+}
+
+.dropdownmenu-list li:last-child a {
+    border-bottom: none;
+}
+
+.dropdownmenu img {
+	width: 1.4em;
+	height: auto;
+}
+
+.resultaten {
+	padding: 1em 1em 1em 1em;
+	background: var(--hfbackgroundcolor);
+	margin-bottom: 1em;
+}
+
+.resultaten h2 {
+	margin: 0;
+	font-family: var(--hfont);
+}
+
+.RWLkaarten {
+    padding-left: 1em;
+    padding-right: 1em;
+	display: grid;
+    gap: 1.5em;
+
+    /* hulp van ChatGPT */
+    grid-template-columns: repeat(auto-fit, minmax(0, 26.25em));
+	justify-content: center;
+}
+
+.RWLkaart {
+    max-width: 26.25em;          
+    background: var(--kaartenkleur);
+    border-radius: 1.25em;       
+    overflow: hidden;
+    position: relative;
+}
+
+.RWLkaart img {
+    width: 100%;
+    display: block;
+}
+
+.tag-nieuw {
+    position: absolute;
+    top: 1.25em;                                 
+    background: var(--kaartendetailskleur);
+    padding: 0.6em 0.875em;    
+    font-weight: bold;      
+    color: var(--textcolor);
+	font-family: var(--textfontsemibold);
+}
+
+.RWLkaartcontent {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.RWLlabel {
+    background: var(--kaartendetailskleur);
+	font-family: var(--textfontsemibold);
+    padding: 0.3em 0.5em;    
+    display: inline-block;    
+    font-size: 0.85em;
+    color: var(--textcolor);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+.RWLkaartcontent h3 {
+    margin: 0 0 1rem 0;
+	font-family: var(--textfontsemibold);
+	font-size: 1em;
+}
+
+.RWLkaartcontent p {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+	font-family: var(--textfont);
+	font-size: 0.8em;
+}
+
+.RWLkaartcirkel {
+    position: absolute;
+    right: 1.25em;               
+    top: -1.875em;               
+    width: 4.375em;              
+    height: 4.375em;           
+    background: var(--kaartendetailskleur);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RWLkaartcirkel svg {
+    width: 2.625em;              
+    height: 2.625em;             
+    fill: none;
+    stroke: var(--kaartenkleur);
 }
