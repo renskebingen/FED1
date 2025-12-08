@@ -13,8 +13,8 @@
 <body>
 
 	<header> 
-		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
-		<button>Koop je tickets</button>
+		<a href="index.html"><img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo"></a>
+		<button aria-label="Koop je tickets knop">Koop je tickets</button>
 		<img id="menuKnop" src="images/menu.png" alt="Menu knop">
 
 		<nav id="mainNav">
@@ -42,7 +42,7 @@
             <p>Bekijk alle Rides with Lights tijdens Bright Nights 2025/2026!</p>
 
             <nav class="dropdownmenu">
-                <button class="dropdownmenu-toggle" aria-expanded="false">
+                <button class="dropdownmenu-toggle" aria-expanded="false" aria-label="Drop down menu">
                     <img src="images/rideswithlights.svg" alt="#" aria-hidden="true">
                     Rides with Lights
                 </button>
@@ -69,6 +69,7 @@
         </section>
 
         <section class="RWLkaarten">
+            <h2 class="h2hidden">Kaarten Rides with Lights</h2>
             <section class="RWLkaart">
                 <span class="tag-nieuw">NIEUW!</span>
                 <img src="images/yoy.webp" alt="Achtbaan YOY in gekleurd licht">
@@ -140,47 +141,50 @@
 			<p>*In verband met de weersomstandigheden kan het zijn dat op de dag zelf besloten wordt dat bepaalde attracties later opengaan, eerder sluiten of gesloten blijven.</p>
 			
 			<div class="AIWbuttons">
-				<button>Koop je tickets</button>
-				<button class="buttonomlijning">Bekijk alle attracties</button>
+				<button aria-label="Koop je tickets knop">Koop je tickets</button>
+				<button class="buttonomlijning" aria-label="Bekijk alle attracties knop">Bekijk alle attracties</button>
 			</div>
 		</section>
     </main>
 
-    <footer>
-		<section class="parkinbroekzak">
-			
-			<div class="PIBtekstblok">
-				<h3 class="PIBh3">HET PARK IN JE BROEKZAK!</h3>
-				<p class="PIBp">... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
+	<footer>
+		<div class="wrapperblokken">
+			<section class="parkinbroekzak">
+				
+				<div class="PIBtekstblok">
+					<h3 class="PIBh3">HET PARK IN JE BROEKZAK!</h3>
+					<p class="PIBp">... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
 
-				<div class="appstoresbuttons">
-					<img src="images/google-playstore.png" alt="Google Play download knop">
-					<img src="images/ios-appstore.png" alt="iOS App Store download knop">
+					<div class="appstoresbuttons">
+						<img src="images/google-playstore.png" alt="Google Play download knop">
+						<img src="images/ios-appstore.png" alt="iOS App Store download knop">
+					</div>
 				</div>
-			</div>
 
-			<figure>
-				<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland">
-			</figure>
+				<figure>
+					<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland">
+				</figure>
 
-		</section>
+			</section>
 
-		<section class="contact">
-			<h3>CONTACT</h3>
-			<p>Spijkweg 30 <br> 8256 RJ Biddinghuizen <br> <strong>Nederland</strong></p>
-			<a href="tel://31321329999">+31 321 32 99 99</a>
-			<a href="info@walibiholland.nl">info@walibiholland.nl</a>
-			<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
-			<button>Contact</button>
-		</section>
-
+			<section class="contact">
+				<h3>CONTACT</h3>
+				<p>Spijkweg 30 <br> 8256 RJ Biddinghuizen <br> <strong>Nederland</strong></p>
+				<a href="tel://31321329999">+31 321 32 99 99</a>
+				<a href="info@walibiholland.nl">info@walibiholland.nl</a>
+				<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
+				<button aria-label="Contact knop">Contact</button>
+			</section>
+		</div>
 
 		<section class="footerbanner1">
+			<h2 class="h2hidden">Footer Walibi zakelijk</h2>
 			<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
-			<button>Walibi zakelijk</button>
+			<button aria-label="Walibi zakelijk knop">Walibi zakelijk</button>
 		</section>
 
 		<section class="footerbanner2">
+			<h2 class="h2hidden">Links footer</h2>
 			<ul>
 				<li><a href="">Algemene voorwaarden</a></li>
 				<li><a href="">Disclaimer</a></li>
@@ -196,10 +200,7 @@
 
 			<p>© Walibi Holland. All rights reserved.</p>
 		</section>
-		
-		
-	</footer>
-
+    </footer>
 
 
 

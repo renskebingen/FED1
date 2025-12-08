@@ -13,20 +13,17 @@
 	<link rel="icon" type="image/svg+xml" href="images/walibiletterlogo.png">
 </head>
 
-<!--Alle foto's worden nog gecomprimeerd in Photoshop-->
-<!--h2 bij elke section en dan hidden-->
-
 <body>
 	<header> 
-		<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
-		<button>Koop je tickets</button>
+		<a href="index.html"><img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo"></a>
+		<button aria-label="Koop je tickets knop">Koop je tickets</button>
 
 		<img id="menuKnop" src="images/menu.png" alt="Menu knop">
 		<nav id="mainNav">
 			<p id="menuSluiten">Sluiten X</p>
             <ul>
 				<li><a href="#">TICKETS > </a></li>
-				<li><a href="rideswithlights.html">RIDES WITH LIGHTS > </a></li>
+				<li><a href="rideswithlights.html">RIDES WITH LIGHTS ></a></li>
 				<li><a href="#">ACTIVITEITEN > </a></li>
 				<li><a href="#">OPENINGSTIJDEN > </a></li>
 				<li><a href="#">VEELGESTELDE VRAGEN > </a></li>
@@ -38,6 +35,7 @@
         </nav>
 
 		<div class="menu-overlay"></div>
+	
 		
 	</header>
 
@@ -46,82 +44,99 @@
 		<section class="titel"> 
 			<h1 class="h1hidden">Walibi Holland</h1>
 			<h2>BRIGHT NIGHTS: TIJDENS DE KERSTVAKANTIE</h2>
-			<video controls autoplay src="videos/video-mobile.mp4" aria-label="Walibi pormotie video Bright Nights"></video> <!--https://www.w3schools.com/tags/att_video_autoplay.asp-->
+
+			<video controls muted>
+    		<source src="videos/video-dekstop.mp4" type="video/mp4"
+            media="(min-width: 896px)" aria-label="Walibi BrightNights promotie video">
+
+    		<source src="videos/video-mobile.mp4" type="video/mp4"
+            media="(max-width: 895px)" aria-label="Walibi BrightNights promotie video">
+			</video> <!--https://www.w3schools.com/tags/att_video_autoplay.asp-->
 		</section>
 
-		<section>	
-			<h3>WAT IS BRIGHT NIGHTS?</h3>
-			<h4>Een stralende winter in Walibi!</h4>
-			<p>Beleef Bright Nights tijdens de kerstvakantie! De spectaculairste rides in fonkelende lights. Maak samen onvergetelijke herinneringen in de gezellige kerstsfeer van Walibi, waar attracties shinen als nooit tevoren, lichtshows je verbazen, winters entertainment je betovert en smakelijke lekkernijen je verleiden. Zodra het gaat schemeren begint het park te stralen met duizenden lichtjes en staan de attracties letterlijk in de spotlights.</p>
-			<p>Bright Nights vindt plaats op:</p>
-			<ul class="data">
-				<li>20 t/m 23 december 2025</li>
-				<li>26 t/m 30 december 2025</li>
-				<li>2 t/m 4 januari 2026</li>
-			</ul>
-		</section>
+		<div class="plaatsing">
+			<section class="brightnightsinfo">	
+				<h3>WAT IS BRIGHT NIGHTS?</h3>
+				<h4>Een stralende winter in Walibi!</h4>
+				<p>Beleef Bright Nights tijdens de kerstvakantie! De spectaculairste rides in fonkelende lights. Maak samen onvergetelijke herinneringen in de gezellige kerstsfeer van Walibi, waar attracties shinen als nooit tevoren, lichtshows je verbazen, winters entertainment je betovert en smakelijke lekkernijen je verleiden. Zodra het gaat schemeren begint het park te stralen met duizenden lichtjes en staan de attracties letterlijk in de spotlights.</p>
+				<p>Bright Nights vindt plaats op:</p>
+				<ul class="data">
+					<li>20 t/m 23 december 2025</li>
+					<li>26 t/m 30 december 2025</li>
+					<li>2 t/m 4 januari 2026</li>
+				</ul>
+			</section>
 
-	<!-- voor het maken van de carousellen heb ik de opzet gedaan met behulp van ChatGPT  -->
-		<section class="carousel1">
-			<ul>
-				<li>
-					<article class="kaart">
-						<div class="kaartimg">
-							<img class="carousel1img1" src="images/walibicarousel1foto1.webp" alt="Lost Gravity achtbaan verlicht" >
-						</div>	
-						<div class="kaarttekst">
-								<h4>Rides with Lights</h4>
-								<p>Tijdens Bright Nights staan een aantal van onze attracties letterlijk in de spotlights.</p>
-							</div>
-					</article>
-				</li>
+		<!-- voor het maken van de carousellen heb ik de opzet gedaan met behulp van ChatGPT  -->
+		<!-- plaatsing in het midden -->
+			<section class="carousel1">
+				<h2 class="h2hidden">Carousel</h2>
+					<ul>
+						<li>
+							<article class="kaart">
+								<div class="kaartimg">
+									<img class="carousel1img1" src="images/walibicarousel1foto1.webp" alt="Lost Gravity achtbaan verlicht" >
+								</div>	
+								<div class="kaarttekst">
+										<h4>Rides with Lights</h4>
+										<p>Tijdens Bright Nights staan een aantal van onze attracties letterlijk in de spotlights.</p>
+									</div>
+							</article>
+						</li>
 
-				<li>
-					<article class="kaart">
-						<div class="kaartimg">
-							<img class="carousel1img2" src="images/walibicarousel1foto2.webp" alt="Blij gezin met twee kinderen in Walibi" >
-						</div>
-						<div class="kaarttekst">
-								<h4>Winterse activiteiten & Verassend Entertainment</h4>
-								<p>Verspreid over het park vind je verschillende winterse activiteiten en sta je oog in oog met verassend entertainment.</p>
-							</div>
-					</article>
-				</li>
+						<li>
+							<article class="kaart">
+								<div class="kaartimg">
+									<img class="carousel1img2" src="images/walibicarousel1foto2.webp" alt="Blij gezin met twee kinderen in Walibi" >
+								</div>
+								<div class="kaarttekst">
+										<h4>Winterse activiteiten & Verassend Entertainment</h4>
+										<p>Verspreid over het park vind je verschillende winterse activiteiten en sta je oog in oog met verassend entertainment.</p>
+									</div>
+							</article>
+						</li>
 
-				<li>
-					<article class="kaart">
-						<div class="kaartimg">
-							<img class="carousel1img3" src="images/walibicarousel1foto3.webp" alt="Verwonderd meisje drukt op een rode knop" >
-						</div>
-							<div class="kaarttekst">
-								<h4>Interactieve lichteffecten</h4>
-								<p>Druk op de knop en activeer lichteffecten</p>
-							</div>
-					</article>
-				</li>
+						<li>
+							<article class="kaart">
+								<div class="kaartimg">
+									<img class="carousel1img3" src="images/walibicarousel1foto3.webp" alt="Verwonderd meisje drukt op een rode knop" >
+								</div>
+									<div class="kaarttekst">
+										<h4>Interactieve lichteffecten</h4>
+										<p>Druk op de knop en activeer lichteffecten</p>
+									</div>
+							</article>
+						</li>
 
-				<li>
-					<article class="kaart">
-						<div class="kaartimg">
-							<img class="carousel1img4" src="images/walibicarousel1foto4.webp" alt="Vrouwelijke dansers op podium in ijs thema" >
-						</div>	
-						<div class="kaarttekst">
-								<h4>Shows</h4>
-								<p>Kijk deze winter je ogen uit tijdens de speciale shows tijdens Bright Nights!</p>
-							</div>
-					</article>
-				</li>
-			</ul>
+						<li>
+							<article class="kaart">
+								<div class="kaartimg">
+									<img class="carousel1img4" src="images/walibicarousel1foto4.webp" alt="Vrouwelijke dansers op podium in ijs thema" >
+								</div>	
+								<div class="kaarttekst">
+										<h4>Shows</h4>
+										<p>Kijk deze winter je ogen uit tijdens de speciale shows tijdens Bright Nights!</p>
+									</div>
+							</article>
+						</li>
+					</ul>
 
-			<nav class="carousel1-bullets" aria-label="carousel paginatie"></nav>
-
-		</section>
+					<nav class="carousel1-bullets" aria-label="carousel paginatie"></nav>
+			</section>
+		</div>
 
 		<section class="boekjehuisje">
-			<h3>Overnachten in de kerstvakantie vanaf € 65,- P.P.</h3>
-			<p>Inclusief een bezoek aan Bright Nights!</p>
-			<p>Maak er een compleet winteravontuur van en blijf slapen in ons vakantiepark Walibi Village! Na een dag vol rides & lights tijdens Bright Nights hoef je niet naar huis. Warm op in je eigen huisje en geniet nog even na van alle winterse gezelligheid.</p>
-			
+			<div class="BJHtextwrapper">
+				<h3>Overnachten in de kerstvakantie vanaf € 65,- P.P.</h3>
+				<p>Inclusief een bezoek aan Bright Nights!</p>
+				<p>Maak er een compleet winteravontuur van en blijf slapen in ons vakantiepark Walibi Village! Na een dag vol rides & lights tijdens Bright Nights hoef je niet naar huis. Warm op in je eigen huisje en geniet nog even na van alle winterse gezelligheid.</p>
+				
+				<div class="BJHbuttons">
+					<button aria-label="Boek je huisje knop">Boek je huisje</button>
+					<button class="buttonomlijning" aria-label="Meer informatie knop">Meer informatie</button>
+				</div>
+			</div>
+
 			<div class="carousel2slider">
 				<ul class="carousel2">
 					<li><img src="images/walibicarousel2foto1.webp" alt="Twee blije meisjes op een slee in de sneeuw" ></li>
@@ -130,11 +145,6 @@
 				</ul>
 
 				<nav class="carousel2slider-bullets" aria-label="carousel paginatie"></nav>
-			</div>
-			
-			<div class="BJHbuttons">
-				<button>Boek je huisje</button>
-				<button class="buttonomlijning">Meer informatie</button>
 			</div>
 		</section>
 
@@ -150,47 +160,51 @@
 			<p>*In verband met de weersomstandigheden kan het zijn dat op de dag zelf besloten wordt dat bepaalde attracties later opengaan, eerder sluiten of gesloten blijven.</p>
 			
 			<div class="AIWbuttons">
-				<button>Koop je tickets</button>
-				<button class="buttonomlijning">Bekijk alle attracties</button>
+				<button aria-label="Koop je tickets knop">Koop je tickets</button>
+				<button class="buttonomlijning" aria-label="Bekijk alle attracties knop">Bekijk alle attracties</button>
 			</div>
 		</section>
 	</main>
 
 	
 	<footer>
-		<section class="parkinbroekzak">
-			
-			<div class="PIBtekstblok">
-				<h3 class="PIBh3">HET PARK IN JE BROEKZAK!</h3>
-				<p class="PIBp">... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
+		<div class="wrapperblokken">
+			<section class="parkinbroekzak">
+				
+				<div class="PIBtekstblok">
+					<h3 class="PIBh3">HET PARK IN JE BROEKZAK!</h3>
+					<p class="PIBp">... of in je tas, ligt eraan waar jij je telefoon bewaart. Download onze nieuwe app en maak je dagje uit compleet!</p>
 
-				<div class="appstoresbuttons">
-					<img src="images/google-playstore.png" alt="Google Play download knop">
-					<img src="images/ios-appstore.png" alt="iOS App Store download knop">
+					<div class="appstoresbuttons">
+						<img src="images/google-playstore.png" alt="Google Play download knop">
+						<img src="images/ios-appstore.png" alt="iOS App Store download knop">
+					</div>
 				</div>
-			</div>
 
-			<figure>
-				<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland">
-			</figure>
+				<figure>
+					<img src="images/walibiparkinbroekzak.webp" alt="Telefoon met plattegrond Walibi Holland">
+				</figure>
 
-		</section>
+			</section>
 
-		<section class="contact">
-			<h3>CONTACT</h3>
-			<p>Spijkweg 30 <br> 8256 RJ Biddinghuizen <br> <strong>Nederland</strong></p>
-			<a href="tel://31321329999">+31 321 32 99 99</a>
-			<a href="info@walibiholland.nl">info@walibiholland.nl</a>
-			<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
-			<button>Contact</button>
-		</section>
+			<section class="contact">
+				<h3>CONTACT</h3>
+				<p>Spijkweg 30 <br> 8256 RJ Biddinghuizen <br> <strong>Nederland</strong></p>
+				<a href="tel://31321329999">+31 321 32 99 99</a>
+				<a href="info@walibiholland.nl">info@walibiholland.nl</a>
+				<p>Heb je een vraag? Stuur ons een Whatsapp!</p>
+				<button aria-label="Contact knop">Contact</button>
+			</section>
+		</div>
 
 		<section class="footerbanner1">
+			<h2 class="h2hidden">Footer Walibi zakelijk</h2>
 			<img src="images/walibihollandlogo.svg" alt="Walibi Holland Logo">
-			<button>Walibi zakelijk</button>
+			<button aria-label="Walibi zakelijk knop">Walibi zakelijk</button>
 		</section>
 
 		<section class="footerbanner2">
+			<h2 class="h2hidden">Links footer</h2>
 			<ul>
 				<li><a href="">Algemene voorwaarden</a></li>
 				<li><a href="">Disclaimer</a></li>
