@@ -166,6 +166,7 @@ Zie de checklist in de files
   Wat heb ik nog niet:
 
   Op dit moment support de website van mij geen high contrast mode. Dit komt onder andere door gebrek aan tijd.
+  
   Ook heb ik nog geen skip link. 
 
   
@@ -220,7 +221,7 @@ Zie de checklist in de files
   Voor het dropdown menu ging dit eigenlijk ook wel prima, alleen duwt die de image mee naar beneden terwijl her er eigenlijk overheen moet vallen. Het is niet persee storend. maar het is wel iets wat mij niet helemaal is gelukt. Ook door de hover functie (omdat het word gezien als knop) blijft die soms geel. Ik heb het soms wel en soms niet.
 
   <img src="readme-images/responsive.png" width="375px" alt="bummer">
-  <img src="readme-images/dropdownrwl" width="375px" alt="bummer">
+  <img src="readme-images/dropdownrwl.png" width="375px" alt="bummer">
 </details>
 
 
