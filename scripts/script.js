@@ -14,6 +14,8 @@ let lastScrollY = window.scrollY;
 let ticking = false;
 const scrollThreshold = 100; 
 
+// Animatie menu hulp van ChatGPT
+
 window.addEventListener('scroll', () => {
     if (!ticking) {
         window.requestAnimationFrame(() => {
@@ -39,7 +41,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// HAMBURGERMENU
+// HAMBURGERMENU Opzet hulp van ChatGPT
 
 if (menuBtn && navMenu && overlay) {
     menuBtn.addEventListener("click", () => {
@@ -57,7 +59,7 @@ if (menuClose && navMenu && overlay) {
     });
 }
 
-// DROPDOWN
+// DROPDOWN Opzet hulp van ChatGPT
 
 if (toggle && list) {
     toggle.addEventListener('click', () => {
@@ -68,6 +70,8 @@ if (toggle && list) {
         list.classList.toggle('show', !open);
     });
 } 
+
+// SLIDER Hulp van ChatGPT
 
 (function () {
 	function setupCarousel(selector) {
