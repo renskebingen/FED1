@@ -143,8 +143,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
+Zie de checklist in de files
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Na het doen van de 2de test zag ik veel verschil in de antwoorden. Voor mijn eigen website stond veel meer in het groen dan bij Walibi. Opzich heeft Walibi een redelijk toegankelijke website en doen ze het echt redelijk oke. Maar ze maken wel stomme fouten als het gaat over de heading volgorde of uberhaupt het semantisch coderen. Bij sommige stukken gaat het goed, maar soms zie je ook veel fouten.
+
+  Ik heb met mijn eigen website mij volledig gehouden aan hoe de headings werken. Zo heb ik een h1 die hidden is in mijn homepagina. Omdat de werkelijke h1 niks vertelde bij de website van Walibi. Ook heb ik bij elke sectie die daadwerkelijk een functie heeft een h2 neergezet. Deze zijn ook hidden, maar ze vertellen wel wat de sectie inhoud. 
+
+  Bij elke buttons heb ik een aria-label toegevoegd en bij mijn video ook zodat dit word meegelezen door de screenreader. Ook bij alle images heb ik een alt-tag toegevoegd, zodat deze ook worden meegelezen met de screenreader.
+
+  Ik heb mijn code door de validators gehaald en hier kwamen geen errors uit. Er kwamen een paar warnings uit voor geen titel bij een section. Waar nodig was, heb ik dit aangepast en als het alleen puur voor opmaak was, heb ik het zo gelaten.
+
+  Bij de website van Walibi heb je geen light of darkmode. Het staat technisch gezien al in darkmode. Daarom heb ik bij mijn website een lightmode met de media query toegevoegd. Dan kan de gebruiker de website zien in hun aangegeven voorkeur. 
+
+  Ik heb bij alle buttons een hover functie toegepast en een focus state. Deze doen het allemaal. Omdat ik natuurlijk geen 100 pagina's heb gemaakt, sturen de buttons je niet door naar een andere pagina, maar dat zou wel kunnen als ik er een pagina aan zou linken.
+
+  Bij de website van Walibi gebruiken ze ontzettend veel divs en spans voor list elementen. Ik heb dit niet zo gedaan en gewoon ul en li gebruikt.
+
+  Bij de video heb ik deze niet op autoplay en begint deze ook gemute. De video op de website van Walibi begint gelijk als je de website opent.
+
+  Wat heb ik nog niet:
+
+  Op dit moment support de website van mij geen high contrast mode. Dit komt onder andere door gebrek aan tijd.
+  Ook heb ik nog geen skip link. 
+
+  
 
 </details>
 
@@ -166,6 +190,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Ik had gevraagd aan de studenten assistent of er naar mijn animatie van mijn header gekeken kon worden. Ik heb de animatie namelijk startend in het midden van mijn scherm. Eigenlijk moest dit vanuit de linkerkant van het scherm, maar ik kreeg het niet aangepast. Helaas was hier geen tijd meer voor. Ik had Bahaa nog een teams berichtje gestuurd, maar helaas had hij het druk.
   - Ik kreeg ook als tip om mijn video niet op autoplay te zetten en deze ook gemute te laten starten. Dit is voor de toegankelijkheid beter.
+  - Voor het eerste carousel gaf Bahaa aan dat het misschien leuker was om de uitlijning van de foto's in het midden te doen. Ik heb het uiteindelijk gelaten als hoe het was, omdat mijn 2de carousel al zo was en ik dacht voor de opmaak is het misschien ook leuker om 2 verschillende te hebben.
 
 </details>
 
@@ -186,7 +211,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb hier aan de hand met flexbox kaarten gemaakt om de content in 1 wrapper te krijgen. ik heb een beetje gekeken naar mijn oude code voor de opzet en met een beetje hulp van chat ging dit veel beter als verwacht. Ik zat hier heel erg tegen op, maar het veel echt reuze mee.
 
-  <img src="readme-images/RWLKaarten.png" width="375px" alt="top">
+  <img src="readme-images/RWLkaarten.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
