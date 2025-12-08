@@ -102,7 +102,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Na het opzetten van mijn hele HTMl ben ik verder gegaan met de basic layout van de pagina. Zo ben ik begonnen met de header en het stukje waar de video staat. Hier moest ik goed opletten, want mijn website gebruikt 2 videos. 1 voor mobile en de andere voor dekstop. Ik vond het wel een leuke uitdaging om zo ook met de responsiveness aan de gang te gaan. Het enige waar ik niet helemaal uitkwam was hoe ik dit kon doen met CSS zonder heel mijn code te moeten veranderen. Dus heb ik het in de HTML gedaan.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -123,7 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Bij week 3 was ik al behoorlijk ver met pagina 1, en wilde ik alvast bezig met dingen die mij sowieso alleen lukte, zonder hulp van de docent of studenten assistenten. Daarom had ik al gelijk de opzet van pagina 2 gedaan in HTML en ben ik begonnen met de kaarten van pagina 2. Dit ging mij goed af en was daarom ook extra trots op het resultaat. Het enige waar ik niet helemaal uitkwam was het dropdown menu met de border er om heen. Gelukkig kwam Bahaa mij helpen met het zogenaamde 'box-shadow'. hierdoor heb ik nu het effect van een dubbele border, waar ik ontzettend blij mee ben.
 
 
   ### Verslag van meeting
@@ -158,16 +158,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier had ik al het meeste af van allebei de pagina's en was ik nog een beetje de punjtes op de i aan het zetten. Ik was hier bezig met de animatie van de header. Deze heb ik gemaakt met de hulp van ChatGPT en daardoor lukte het me aardig goed. Ik dacht te zien op de Walibi website dat de animatie vanuit het midden van het scherm kwam, maar deze kwam vanit links boven in de hoek. Ik had aan Bahaa gevraagd of hij hier misschien mee kon helpen, maar dat is helaas niet meer gelukt. Toch ben ik uiteindelijk erg blij met het resultaat.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Ik had gevraagd aan de studenten assistent of er naar mijn animatie van mijn header gekeken kon worden. Ik heb de animatie namelijk startend in het midden van mijn scherm. Eigenlijk moest dit vanuit de linkerkant van het scherm, maar ik kreeg het niet aangepast. Helaas was hier geen tijd meer voor. Ik had Bahaa nog een teams berichtje gestuurd, maar helaas had hij het druk.
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik kreeg ook als tip om mijn video niet op autoplay te zetten en deze ook gemute te laten starten. Dit is voor de toegankelijkheid beter.
 
 </details>
 
@@ -181,19 +179,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eigenhomepagina.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eigenrideswithlightspagina.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb hier aan de hand met flexbox kaarten gemaakt om de content in 1 wrapper te krijgen. ik heb een beetje gekeken naar mijn oude code voor de opzet en met een beetje hulp van chat ging dit veel beter als verwacht. Ik zat hier heel erg tegen op, maar het veel echt reuze mee.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/RWLKaarten.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het responsive gedeelte is niet persee niet gelukt, maar ik vond het wat lastiger, voornamelijk omdat je goed moet kijken in de inspect of daadwerkelijk alles meebeweegt. Ik vind het wel intressant om te weten hoe dit moest en heb er daarom ook wel plezier uit gehaald.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Voor het dropdown menu ging dit eigenlijk ook wel prima, alleen duwt die de image mee naar beneden terwijl her er eigenlijk overheen moet vallen. Het is niet persee storend. maar het is wel iets wat mij niet helemaal is gelukt. Ook door de hover functie (omdat het word gezien als knop) blijft die soms geel. Ik heb het soms wel en soms niet.
+
+  <img src="readme-images/responsive.png" width="375px" alt="bummer">
+  <img src="readme-images/dropdownrwl" width="375px" alt="bummer">
 </details>
 
 
