@@ -107,24 +107,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik kon de video niet vinden in de website, maar na het vragen aan de studenten assistent, had ik ze gevonden en heb ik deze in mijn code gezet.
+  - Ik had al wat dingen in mijn code gezet wat ik nog moest aanpassen, omdat ik alleen nog de opzet had gedaan in HTML. Dus ik had erin gezet dat ik de foto's moest comprimeren in CSS en dat ik de H1 hidden moest maken.
+  - Alle secties moeten een H2 hebben
 
 </details>
 
@@ -141,23 +129,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Meneer viel op dat mijn header niet responsive was. We hebben er samen even naar gekeken, maaar kwamen er niet snel achter. Meneer gaf aan dat hij er later naar zou kijken en toen kreeg ik een appje op teams waar het aan lag. Dit heb ik gelijk aangepast in mijn code.
+  - Ook hadden we een puntje besproken of een bepaalde sectie puur alleen voor opmaak was of ook echt een H2 nodig had voor de screenreader.
 
 </details>
 
@@ -188,20 +164,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - Ik had gevraagd aan de studenten assistent of er naar mijn animatie van mijn header gekeken kon worden. Ik heb de animatie namelijk startend in het midden van mijn scherm. Eigenlijk moest dit vanuit de linkerkant van het scherm, maar ik kreeg het niet aangepast. Helaas was hier geen tijd meer voor. Ik had Bahaa nog een teams berichtje gestuurd, maar helaas had hij het druk.
   - punt 2
   - nog een punt
   - ...
