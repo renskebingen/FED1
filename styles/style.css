@@ -46,6 +46,35 @@
 	--kaartendetailskleur: #cda720;
 	--h1colorRWL: #cda720;
 	--fadedbuttoncolor: #80795f;
+	--markercolor: #63636380;
+	--buttonhovercolor: #a0800c;
+	--buttonhoverfootercolor: #18376c;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+	--textcolor:black;
+	--textcolorPIB: #ffffff;
+	--backgroundcolor:#ffffff;
+	--fb1backgroundcolor: #abc8ff;
+	--fb2backgroundcolor: #468aff;
+	--backgroundcolorPIB: #f81700;
+	--hfbackgroundcolor:#c7dbff;
+	--buttoncolor: #f81700;
+	--buttontextcolor: black;
+	--borderbottomcolor: rgb(255, 255, 255);
+	--kaartenkleur: #f81700;
+	--kaartendetailskleur: #f81700;
+	--h1colorRWL: #f81700;
+	--fadedbuttoncolor: #80625f;
+	--markercolor: #ff000080;
+	--buttonhovercolor: #8d1b0e;
+	--buttonhoverfootercolor: #003693;
+	}
+
+	.RWLhead p {
+		color: var(--textcolorPIB);
+	}
 }
 
 /****************/
@@ -66,6 +95,7 @@ img {
 	width: 100%;
 }
 
+
 button {
 	color: var(--buttontextcolor);
 	background-color: var(--buttoncolor);
@@ -73,6 +103,14 @@ button {
 	border-radius: 3em;
 	font-family: var(--textfont);
 	padding: 0.4em 1.3em;
+}
+
+button:hover {
+ background-color: var(--buttonhovercolor);
+}
+
+button:focus {
+ background-color: var(--buttonhovercolor);
 }
 
 header {
@@ -95,14 +133,15 @@ header.hide {
 }
 
 header img:first-of-type {
-	width: 8em;
-	height: auto;
-	padding-bottom: 0.8em;
-	padding-top: 0.8em;
+    width: 5em;     
+    height: auto;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
 }
 
-header img:nth-of-type(2) {
-	width: 3em;
+#menuKnop {
+    width: 3em;     
+    height: auto;
 }
 
 header nav {
@@ -182,6 +221,16 @@ header nav p {
 	width: 1px;
 }
 
+.h2hidden {
+	clip: rect(0, 0, 0, 0);
+  	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 .titel {
     position: relative;
     display: inline-block;
@@ -234,7 +283,7 @@ p {
 
 /* https://www.w3schools.com/howto/howto_css_bullet_color.asp */
 .data li::marker {
-	color: hsl(0, 0%, 39%, .5);
+	color: var(--markercolor);
 	font-size: 1.1em;
 }
 
@@ -323,6 +372,14 @@ p {
 
 .carousel1-bullets button[aria-current="true"] {
 	background: var(--buttoncolor);
+}
+
+.BJHtextwrapper {
+    order: 1;
+}
+
+.carousel2slider {
+    order: 2;
 }
 
 .carousel2 {
@@ -529,6 +586,10 @@ footer {
 	background-color: var(--hfbackgroundcolor);
 }
 
+.footerbanner1 button:hover {
+	background-color: var(--buttonhoverfootercolor);
+}
+
 .footerbanner2 {
 	background-color: var(--fb2backgroundcolor);
 }
@@ -577,7 +638,7 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     padding: 4em 1em 2em 1em;
-    color: white;
+    color: var(--textcolor);
 }
 
 .RWLhead h1 {
@@ -607,7 +668,7 @@ footer {
 .dropdownmenu-toggle {
     width: 100%;
     background: none;
-    color: #e5b93c;
+    color: var(--buttoncolor);
     border: none;
     padding: 1em;
     font-size: 1em;
@@ -643,9 +704,9 @@ footer {
     align-items: center;
     gap: 0.8em;
     padding: 1em;
-    color: #e5b93c;
+    color: var(--buttoncolor);
     text-decoration: none;
-    border-bottom: 0.1em solid rgba(255,255,255,0.1);
+    border-bottom: 0.1em solid var(--borderbottomcolor);
 	justify-content: flex-start;
 	gap: 1em;
 	font-family: var(--textfont);
@@ -753,4 +814,245 @@ footer {
     height: 2.625em;             
     fill: none;
     stroke: var(--kaartenkleur);
+}
+
+@media (width > 896px) {
+
+	header img:first-of-type {
+		margin-left: 5em;
+	}
+
+	#menuKnop {
+		margin-right: 5em;
+	}
+
+	.titel h2 {
+		padding-top: 2em;
+		padding-left: 2em;
+		max-width: 13em;
+		font-size: 3em;
+	}
+
+    .wrapperblokken {
+        display: flex;
+        align-items: center;
+		justify-content: center;
+    }
+		.wrapperblokken > section {
+        flex: 1;
+    }
+	.RWLhead {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+        align-items: center;
+    }
+	.contact {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+	.plaatsing {
+		display: flex;
+		padding-left: 5em;
+		padding-right: 5em;
+	}	
+
+	.brightnightsinfo {
+		max-width: 27em;
+		padding-right: 5em;
+	}
+
+	.carousel1 ul {
+		overflow-x: visible;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 2em;
+		justify-items: center;
+		padding-left: 0;
+	}
+
+	.carousel1 li {
+		padding-top: 0;
+		height: auto;
+		scroll-snap-align: none;
+	}
+
+	.kaart {
+		width: 12em;
+		margin: 0;
+	}
+
+	.kaart img {
+		width: 100%;
+		height: 8em;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.kaarttekst {
+		height: auto;
+		padding-bottom: 1.2em;
+		font-size: 0.8em;
+	}
+
+	.carousel1-bullets {
+		display: none;
+	}
+
+	.boekjehuisje {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .boekjehuisje > :not(.carousel2slider) {
+        grid-column: 1;
+    }
+
+    .carousel2slider {
+        grid-column: 2;
+        align-self: start;
+		order: 2;
+    }
+
+    .carousel2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto; 
+        gap: 1.5em;
+
+        overflow: visible;
+        padding: 0;
+    }
+
+    .carousel2 li {
+        list-style: none;
+    }
+
+    .carousel2 li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .carousel2 li:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .carousel2 li:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .carousel2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.5em;
+    }
+
+    .carousel2slider-bullets {
+        display: none;
+    }
+
+	.BJHtext {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2em;
+		order: 1; 
+	}
+
+    .attractiesinwinter {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 3em;
+        align-items: start;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3em 2em;
+    }
+
+    .attractiesinwinter img {
+        grid-column: 1;
+        grid-row: 1 / span 4;
+        order: 1;
+        width: 100%;
+        margin: 0;
+        border-radius: 1.5em;
+    }
+
+    .attractiesinwinter h3 {
+        grid-column: 2;
+        order: 2;
+    }
+
+    .attractiesinwinter p {
+        grid-column: 2;
+        order: 3;
+    }
+
+    .AIWbuttons {
+        grid-column: 2;
+        order: 4;
+        justify-content: flex-start;
+        padding-top: 1.5em;
+    }
+
+	.resultaten h2 {
+		padding-left: 4em;
+	}
+}
+
+
+@media (width > 1060px) {
+
+    .plaatsing {
+        display: flex;
+        justify-content: center;
+
+        max-width: 1400px;
+        margin: 0 auto;
+
+        padding-left: 2em; 
+        padding-right: 2em;
+        gap: 3em;
+    }
+
+    .brightnightsinfo {
+        max-width: 32em;
+        padding-right: 0;
+    }
+
+    .brightnightsinfo h3 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .brightnightsinfo p,
+    .brightnightsinfo ul {
+        font-size: 1rem; 
+    }
+
+    .carousel1 ul {
+        overflow-x: visible;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        padding-left: 0;
+    }
+
+    .kaart {
+        width: 20em;
+    }
+
+    .kaart img {
+        height: 10em;
+        object-fit: cover;
+    }
 }
