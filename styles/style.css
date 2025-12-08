@@ -1,6 +1,7 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -23,11 +24,10 @@
 	url("../fonts/walibi0615/walibi-holland.ttf") format("truetype");
 }
 
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	--textcolor:white;
 	--textcolorPIB: #344054;
@@ -94,7 +94,6 @@ body {
 img {
 	width: 100%;
 }
-
 
 button {
 	color: var(--buttontextcolor);
@@ -838,15 +837,18 @@ footer {
         align-items: center;
 		justify-content: center;
     }
-		.wrapperblokken > section {
+
+	.wrapperblokken > section {
         flex: 1;
     }
+
 	.RWLhead {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
         align-items: center;
     }
+
 	.contact {
 		padding-top: 3em;
 		padding-bottom: 3em;
@@ -1055,4 +1057,18 @@ footer {
         height: 10em;
         object-fit: cover;
     }
+
+	.BJHtextwrapper h3 {
+		font-size: 2.5em;
+		padding-left: 1em;
+	}
+
+	.BJHtextwrapper p {
+		padding-left: 2em;
+	}
+
+	.attractiesinwinter h3 {
+		font-size: 2.5em;
+		margin-bottom: 0;
+	}
 }
