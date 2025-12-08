@@ -58,6 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  (zie WCAG Checklist in files)
 
   1. er wordt heel veel gebruik gemaakt van divs en spans. terwijl heel veel ook semantisch kan. zo zie ik geen sections of andere semantische tags.
   2. er worden geen alt teksten gebruikt bij img's.
@@ -208,8 +209,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/tags/att_video_autoplay.asp -> video controls
+  2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -> flexbox, order etc
+  3. https://www.w3schools.com/howto/howto_css_bullet_color.asp -> bullet color lists
+  4. https://www.w3schools.com/cssref/pr_background-image.php -> background images
+  5. https://www.w3schools.com/css/css3_shadows_box.asp -> box shadow
+  6. https://chatgpt.com/ -> hamburger menu overlay, animatie hamburger menu, slider carousel, carousel opzet, dropdown menu
 
 </details>
